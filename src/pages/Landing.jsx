@@ -43,16 +43,22 @@ export default function Landing() {
         <p className="text-saenggi-600 text-sm font-medium tracking-widest">생기출판사</p>
       </header>
 
-      {/* 히어로 */}
+      {/* 히어로 — 책표지 배경 */}
       <section className="max-w-2xl mx-auto px-6 py-16 text-center">
-        <p className="text-saenggi-600 text-sm tracking-widest mb-4">한정판 예약</p>
-        <h1 className="font-serif text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
-          나는 끝내<br />나를 살아냈다
-        </h1>
-        <p className="text-gray-600 text-lg mb-2">하봉길 지음</p>
-        <p className="text-saenggi-600 font-medium mb-10">
-          천일수련 1,171일의 기록 — 2026년 출간
-        </p>
+        <div className="relative rounded-3xl overflow-hidden mb-10 shadow-xl">
+          <img
+            src="/images/책앞표지.JPG"
+            alt="나는 끝내 나를 살아냈다 책표지"
+            className="w-full object-cover"
+            style={{ maxHeight: '520px', objectPosition: 'top' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-8 text-left">
+            <p className="text-white/70 text-xs tracking-widest mb-2">한정판 예약</p>
+            <p className="text-white text-xl font-semibold mb-1">하봉길 지음</p>
+            <p className="text-white/60 text-sm">천일수련 1,171일의 기록 — 2026년 출간</p>
+          </div>
+        </div>
 
         {/* 수량 현황 */}
         <div className="bg-white rounded-2xl shadow-sm border border-saenggi-100 p-6 mb-8">
