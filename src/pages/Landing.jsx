@@ -47,7 +47,7 @@ export default function Landing() {
       <section className="max-w-2xl mx-auto px-6 py-16 text-center">
         <div className="relative rounded-3xl overflow-hidden mb-10 shadow-xl">
           <img
-            src="/images/책앞표지.JPG"
+            src="/images/책메인표지.JPG"
             alt="나는 끝내 나를 살아냈다"
             className="w-full object-cover"
             style={{ maxHeight: '520px', objectPosition: 'top' }}
